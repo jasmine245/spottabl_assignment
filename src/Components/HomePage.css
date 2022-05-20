@@ -1,0 +1,247 @@
+.body{
+    margin-left: 1%;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.header{
+    display: flex;
+}
+.logo{
+    margin: 8% 0% 0 0;
+    width:40%;
+}
+.heading{
+    margin-left: -6%;
+    font-weight: bold;
+    font-size: 110%;
+    letter-spacing: 1px;
+}
+.para{
+    font-weight: lighter;
+    margin-top: -5%;
+    letter-spacing: 1px;
+}
+.container{
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+.search{
+    padding: 1% 2%;
+    width:80vw;
+    border-radius: 5px;
+    border: 1px solid #adadad;
+    color:#adadad;
+    font-size: 115%;
+    outline: none;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.submit{
+    width:10%;
+    height: 100%;
+    padding: 1% 0;
+    border-radius: 5px;
+    background-color: #1e30a0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 105%;
+    border:2px solid #1e30a0;
+}
+.submit:hover{
+    border:2px solid #1e30a0;
+    background-color: #fff;
+    color:#1e30a0;
+    cursor: pointer;
+}
+.refresh{
+    /* border:1px solid black; */
+    position: relative;
+    top:15px;
+    margin-left: 2%;
+    width:3%;
+}
+.refresh:hover{
+    cursor: pointer;
+}
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+.overlay {
+    background: rgba(49,49,49,0.8);
+  }
+.modal-content {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   line-height: 1.4;
+   background: #283a46;
+   padding: 14px 28px;
+   border-radius: 3px;
+   width:58%;
+}
+.container-modal{
+    margin-top:15%;
+    background-color: #fff;
+    width:50vw;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.input{
+    padding: 1% 2%;
+    border-radius: 5px;
+    border:1px solid #adadad;
+    font-size: 110%;
+    margin-top: 5%;
+    margin-left: 1%;
+}
+.display-data{
+    margin-top:2%;
+}
+.close-modal {
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #1e30a0;
+    border: 2px solid #1e30a0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 1% 5%;
+}
+.close-modal:hover{
+    background-color: #fff;
+    color: #1e30a0;
+    border: 2px solid #1e30a0;
+    cursor: pointer;
+}
+.data{
+    display: flex;
+    /* border:1px solid black; */
+    width:90vw;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 1%;
+}
+.initials{
+    background-color: #d7dcff;
+    color: #2d2e35;
+    border:2px solid #d7dcff;
+    border-radius: 50%;
+    width:30px;
+    height: 40px; 
+    padding: 1.5% 1% 0;
+    font-size: 125%;
+    font-weight: bold;
+    margin-top: 1%;
+    letter-spacing: 2px;
+}
+.full-data-img{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 2%;
+    width:85vw;
+    max-width: 85vw;
+    word-break: break-all;
+}
+.name{
+    font-size: 150%;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: bold;
+    top:-5%;
+    outline: none;
+}
+.email{
+    letter-spacing: 1px;
+    position: relative;
+    top:-10px;
+    outline: none;
+
+}
+.full-data{
+    /* border:1px solid black; */
+    width:70vw;
+}
+.trash{
+    position: relative;
+    left:-50px;
+    top:20px;
+}
+.trash:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        margin-left:1%;
+        width:25%;
+    }
+    .heading{
+        margin-left: -40%;
+        font-size: 85%;
+    }
+    .h1{
+        font-size: 100%;
+    }
+    .submit{
+        position: relative;
+        top:18px;
+        left:-15px;
+        width:40%;
+    }
+    .refresh{
+        display: none;
+    }
+    .search{
+        width:93%;
+    }
+    .name{
+        font-size: 120%;
+        font-weight: bold;
+        position: relative;
+        top:5px;
+        left:5px;
+    }
+    .email{
+        position: relative;
+        top:-10px;
+    }
+    .trash{
+        left:-5%;
+    }
+    .full-data-img{
+        width:70vw;
+        max-width: 70vw;
+        word-break: break-all;
+    }
+    .container-modal{
+        margin-top:70%;
+        padding: 10% 23% 10% 10%;
+        text-align: left;
+    }
+    .input{
+        margin-bottom: 5%;
+    }
+    .close-modal{
+        position: relative;
+        top:10%;
+        left:10%;
+    }
+    .initials{
+        width:40px;
+        height: 40px;
+    }
+  }
